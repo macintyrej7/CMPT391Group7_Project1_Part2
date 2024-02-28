@@ -28,13 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            yearRadioButton = new RadioButton();
-            semesterRadioButton = new RadioButton();
-            studentMajorRadioButton = new RadioButton();
-            studentGenderRadioButton = new RadioButton();
-            instructorDepartmentRadioButton = new RadioButton();
-            instructorFacultyRadioButton = new RadioButton();
-            universityRadioButton = new RadioButton();
             yearCombBox = new ComboBox();
             semesterComboBox = new ComboBox();
             studentGenderComboBox = new ComboBox();
@@ -47,85 +40,14 @@
             listOfCoursesLabel = new Label();
             numberOfCoursesTextBox = new TextBox();
             label1 = new Label();
+            yearCheckBox = new CheckBox();
+            semesterCheckBox = new CheckBox();
+            majorCheckBox = new CheckBox();
+            genderCheckBox = new CheckBox();
+            departmentCheckBox = new CheckBox();
+            facultyCheckBox = new CheckBox();
+            universityCheckBox = new CheckBox();
             SuspendLayout();
-            // 
-            // yearRadioButton
-            // 
-            yearRadioButton.AutoSize = true;
-            yearRadioButton.Location = new Point(33, 117);
-            yearRadioButton.Name = "yearRadioButton";
-            yearRadioButton.Size = new Size(61, 24);
-            yearRadioButton.TabIndex = 0;
-            yearRadioButton.TabStop = true;
-            yearRadioButton.Text = "Year:";
-            yearRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // semesterRadioButton
-            // 
-            semesterRadioButton.AutoSize = true;
-            semesterRadioButton.Location = new Point(33, 164);
-            semesterRadioButton.Name = "semesterRadioButton";
-            semesterRadioButton.Size = new Size(94, 24);
-            semesterRadioButton.TabIndex = 1;
-            semesterRadioButton.TabStop = true;
-            semesterRadioButton.Text = "Semester:";
-            semesterRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // studentMajorRadioButton
-            // 
-            studentMajorRadioButton.AutoSize = true;
-            studentMajorRadioButton.Location = new Point(324, 117);
-            studentMajorRadioButton.Name = "studentMajorRadioButton";
-            studentMajorRadioButton.Size = new Size(72, 24);
-            studentMajorRadioButton.TabIndex = 2;
-            studentMajorRadioButton.TabStop = true;
-            studentMajorRadioButton.Text = "Major:";
-            studentMajorRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // studentGenderRadioButton
-            // 
-            studentGenderRadioButton.AutoSize = true;
-            studentGenderRadioButton.Location = new Point(324, 165);
-            studentGenderRadioButton.Name = "studentGenderRadioButton";
-            studentGenderRadioButton.Size = new Size(81, 24);
-            studentGenderRadioButton.TabIndex = 3;
-            studentGenderRadioButton.TabStop = true;
-            studentGenderRadioButton.Text = "Gender:";
-            studentGenderRadioButton.UseVisualStyleBackColor = true;
-            studentGenderRadioButton.CheckedChanged += studentGenderRadioButton_CheckedChanged;
-            // 
-            // instructorDepartmentRadioButton
-            // 
-            instructorDepartmentRadioButton.AutoSize = true;
-            instructorDepartmentRadioButton.Location = new Point(605, 117);
-            instructorDepartmentRadioButton.Name = "instructorDepartmentRadioButton";
-            instructorDepartmentRadioButton.Size = new Size(113, 24);
-            instructorDepartmentRadioButton.TabIndex = 4;
-            instructorDepartmentRadioButton.TabStop = true;
-            instructorDepartmentRadioButton.Text = "Department:";
-            instructorDepartmentRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // instructorFacultyRadioButton
-            // 
-            instructorFacultyRadioButton.AutoSize = true;
-            instructorFacultyRadioButton.Location = new Point(605, 164);
-            instructorFacultyRadioButton.Name = "instructorFacultyRadioButton";
-            instructorFacultyRadioButton.Size = new Size(78, 24);
-            instructorFacultyRadioButton.TabIndex = 5;
-            instructorFacultyRadioButton.TabStop = true;
-            instructorFacultyRadioButton.Text = "Faculty:";
-            instructorFacultyRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // universityRadioButton
-            // 
-            universityRadioButton.AutoSize = true;
-            universityRadioButton.Location = new Point(904, 117);
-            universityRadioButton.Name = "universityRadioButton";
-            universityRadioButton.Size = new Size(97, 24);
-            universityRadioButton.TabIndex = 6;
-            universityRadioButton.TabStop = true;
-            universityRadioButton.Text = "University:";
-            universityRadioButton.UseVisualStyleBackColor = true;
             // 
             // yearCombBox
             // 
@@ -226,12 +148,89 @@
             label1.TabIndex = 18;
             label1.Text = "Number of Courses:";
             // 
+            // yearCheckBox
+            // 
+            yearCheckBox.AutoSize = true;
+            yearCheckBox.Location = new Point(33, 117);
+            yearCheckBox.Name = "yearCheckBox";
+            yearCheckBox.Size = new Size(62, 24);
+            yearCheckBox.TabIndex = 19;
+            yearCheckBox.Text = "Year:";
+            yearCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // semesterCheckBox
+            // 
+            semesterCheckBox.AutoSize = true;
+            semesterCheckBox.Location = new Point(33, 164);
+            semesterCheckBox.Name = "semesterCheckBox";
+            semesterCheckBox.Size = new Size(95, 24);
+            semesterCheckBox.TabIndex = 20;
+            semesterCheckBox.Text = "Semester:";
+            semesterCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // majorCheckBox
+            // 
+            majorCheckBox.AutoSize = true;
+            majorCheckBox.Location = new Point(324, 119);
+            majorCheckBox.Name = "majorCheckBox";
+            majorCheckBox.Size = new Size(73, 24);
+            majorCheckBox.TabIndex = 21;
+            majorCheckBox.Text = "Major:";
+            majorCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // genderCheckBox
+            // 
+            genderCheckBox.AutoSize = true;
+            genderCheckBox.Location = new Point(324, 165);
+            genderCheckBox.Name = "genderCheckBox";
+            genderCheckBox.Size = new Size(82, 24);
+            genderCheckBox.TabIndex = 22;
+            genderCheckBox.Text = "Gender:";
+            genderCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // departmentCheckBox
+            // 
+            departmentCheckBox.AutoSize = true;
+            departmentCheckBox.Location = new Point(604, 119);
+            departmentCheckBox.Name = "departmentCheckBox";
+            departmentCheckBox.Size = new Size(114, 24);
+            departmentCheckBox.TabIndex = 23;
+            departmentCheckBox.Text = "Department:";
+            departmentCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // facultyCheckBox
+            // 
+            facultyCheckBox.AutoSize = true;
+            facultyCheckBox.Location = new Point(604, 166);
+            facultyCheckBox.Name = "facultyCheckBox";
+            facultyCheckBox.Size = new Size(79, 24);
+            facultyCheckBox.TabIndex = 24;
+            facultyCheckBox.Text = "Faculty:";
+            facultyCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // universityCheckBox
+            // 
+            universityCheckBox.AutoSize = true;
+            universityCheckBox.Location = new Point(903, 117);
+            universityCheckBox.Name = "universityCheckBox";
+            universityCheckBox.Size = new Size(98, 24);
+            universityCheckBox.TabIndex = 25;
+            universityCheckBox.Text = "University:";
+            universityCheckBox.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1182, 853);
+            Controls.Add(universityCheckBox);
+            Controls.Add(facultyCheckBox);
+            Controls.Add(departmentCheckBox);
+            Controls.Add(genderCheckBox);
+            Controls.Add(majorCheckBox);
+            Controls.Add(semesterCheckBox);
+            Controls.Add(yearCheckBox);
             Controls.Add(label1);
             Controls.Add(numberOfCoursesTextBox);
             Controls.Add(listOfCoursesLabel);
@@ -244,13 +243,6 @@
             Controls.Add(studentGenderComboBox);
             Controls.Add(semesterComboBox);
             Controls.Add(yearCombBox);
-            Controls.Add(universityRadioButton);
-            Controls.Add(instructorFacultyRadioButton);
-            Controls.Add(instructorDepartmentRadioButton);
-            Controls.Add(studentGenderRadioButton);
-            Controls.Add(studentMajorRadioButton);
-            Controls.Add(semesterRadioButton);
-            Controls.Add(yearRadioButton);
             Name = "Form1";
             Text = "CourseDataWarehouse";
             ResumeLayout(false);
@@ -258,14 +250,6 @@
         }
 
         #endregion
-
-        private RadioButton yearRadioButton;
-        private RadioButton semesterRadioButton;
-        private RadioButton studentMajorRadioButton;
-        private RadioButton studentGenderRadioButton;
-        private RadioButton instructorDepartmentRadioButton;
-        private RadioButton instructorFacultyRadioButton;
-        private RadioButton universityRadioButton;
         private ComboBox yearCombBox;
         private ComboBox semesterComboBox;
         private ComboBox studentGenderComboBox;
@@ -278,5 +262,12 @@
         private Label listOfCoursesLabel;
         private TextBox numberOfCoursesTextBox;
         private Label label1;
+        private CheckBox yearCheckBox;
+        private CheckBox semesterCheckBox;
+        private CheckBox majorCheckBox;
+        private CheckBox genderCheckBox;
+        private CheckBox departmentCheckBox;
+        private CheckBox facultyCheckBox;
+        private CheckBox universityCheckBox;
     }
 }
