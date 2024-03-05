@@ -6,7 +6,7 @@
 - System.Data.SqlClient package (install via "Tools" -> "NuGet Package Manager" -> "Manage NuGet Packages for Solution..."; detailed package installation instructions available here: https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio).
 
 ### ER Diagram 
-[Link to ER Diagram PDF.](https://github.com/macintyrej7/CMPT391Group7_Project1_Part2/blob/254b5a0954830009b31a518c1dbabb5f03b228c7/Documentation/CMPT%20391%20Group%207%20-%20Project%201%20Part%202%20ER%20Diagram.pdf)
+[Link to ER Diagram PDF.](https://github.com/macintyrej7/CMPT391Group7_Project1_Part2/blob/205b5e3c9ec075425bcc82b4ec77d49bfc021cb1/Documentation/CMPT%20391%20Group%207%20-%20Project%201%20Part%202%20ER%20Diagram.pdf)
 
 ### Data Warehouse Description
 The database that our main client program utilizes is a data warehouse for storing university courses. The data warehouse follows the star schema with a slight modification regarding the University table, resulting in a snowflake schema. There are six tables: Enrollment, Course, Date, University, Student, and Instructor. Enrollment is the central table, and takes the primary keys from the surrounding tables as foreign keys. The schema for the tables is as follows:
