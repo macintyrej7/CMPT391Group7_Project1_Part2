@@ -48,12 +48,20 @@
             facultyCheckBox = new CheckBox();
             universityCheckBox = new CheckBox();
             searchBtn = new Button();
+            instructorGroupBox = new GroupBox();
+            studentGroupBox = new GroupBox();
+            institutionGroupBox = new GroupBox();
+            dateGroupBox = new GroupBox();
+            instructorGroupBox.SuspendLayout();
+            studentGroupBox.SuspendLayout();
+            institutionGroupBox.SuspendLayout();
+            dateGroupBox.SuspendLayout();
             SuspendLayout();
             // 
             // yearComboBox
             // 
             yearComboBox.FormattingEnabled = true;
-            yearComboBox.Location = new Point(133, 117);
+            yearComboBox.Location = new Point(109, 26);
             yearComboBox.Name = "yearComboBox";
             yearComboBox.Size = new Size(151, 28);
             yearComboBox.TabIndex = 7;
@@ -61,7 +69,7 @@
             // semesterComboBox
             // 
             semesterComboBox.FormattingEnabled = true;
-            semesterComboBox.Location = new Point(133, 164);
+            semesterComboBox.Location = new Point(109, 73);
             semesterComboBox.Name = "semesterComboBox";
             semesterComboBox.Size = new Size(151, 28);
             semesterComboBox.TabIndex = 8;
@@ -69,7 +77,7 @@
             // genderComboBox
             // 
             genderComboBox.FormattingEnabled = true;
-            genderComboBox.Location = new Point(411, 165);
+            genderComboBox.Location = new Point(97, 74);
             genderComboBox.Name = "genderComboBox";
             genderComboBox.Size = new Size(151, 28);
             genderComboBox.TabIndex = 9;
@@ -77,7 +85,7 @@
             // majorComboBox
             // 
             majorComboBox.FormattingEnabled = true;
-            majorComboBox.Location = new Point(411, 117);
+            majorComboBox.Location = new Point(97, 26);
             majorComboBox.Name = "majorComboBox";
             majorComboBox.Size = new Size(151, 28);
             majorComboBox.TabIndex = 10;
@@ -85,7 +93,7 @@
             // departmentComboBox
             // 
             departmentComboBox.FormattingEnabled = true;
-            departmentComboBox.Location = new Point(724, 117);
+            departmentComboBox.Location = new Point(130, 26);
             departmentComboBox.Name = "departmentComboBox";
             departmentComboBox.Size = new Size(151, 28);
             departmentComboBox.TabIndex = 11;
@@ -93,7 +101,7 @@
             // facultyComboBox
             // 
             facultyComboBox.FormattingEnabled = true;
-            facultyComboBox.Location = new Point(724, 165);
+            facultyComboBox.Location = new Point(130, 74);
             facultyComboBox.Name = "facultyComboBox";
             facultyComboBox.Size = new Size(151, 28);
             facultyComboBox.TabIndex = 12;
@@ -101,7 +109,7 @@
             // universityComboBox
             // 
             universityComboBox.FormattingEnabled = true;
-            universityComboBox.Location = new Point(1007, 117);
+            universityComboBox.Location = new Point(113, 35);
             universityComboBox.Name = "universityComboBox";
             universityComboBox.Size = new Size(151, 28);
             universityComboBox.TabIndex = 13;
@@ -152,7 +160,7 @@
             // yearCheckBox
             // 
             yearCheckBox.AutoSize = true;
-            yearCheckBox.Location = new Point(33, 117);
+            yearCheckBox.Location = new Point(9, 26);
             yearCheckBox.Name = "yearCheckBox";
             yearCheckBox.Size = new Size(62, 24);
             yearCheckBox.TabIndex = 19;
@@ -162,7 +170,7 @@
             // semesterCheckBox
             // 
             semesterCheckBox.AutoSize = true;
-            semesterCheckBox.Location = new Point(33, 164);
+            semesterCheckBox.Location = new Point(9, 73);
             semesterCheckBox.Name = "semesterCheckBox";
             semesterCheckBox.Size = new Size(95, 24);
             semesterCheckBox.TabIndex = 20;
@@ -172,7 +180,7 @@
             // majorCheckBox
             // 
             majorCheckBox.AutoSize = true;
-            majorCheckBox.Location = new Point(324, 119);
+            majorCheckBox.Location = new Point(10, 28);
             majorCheckBox.Name = "majorCheckBox";
             majorCheckBox.Size = new Size(73, 24);
             majorCheckBox.TabIndex = 21;
@@ -182,7 +190,7 @@
             // genderCheckBox
             // 
             genderCheckBox.AutoSize = true;
-            genderCheckBox.Location = new Point(324, 165);
+            genderCheckBox.Location = new Point(10, 74);
             genderCheckBox.Name = "genderCheckBox";
             genderCheckBox.Size = new Size(82, 24);
             genderCheckBox.TabIndex = 22;
@@ -192,7 +200,7 @@
             // departmentCheckBox
             // 
             departmentCheckBox.AutoSize = true;
-            departmentCheckBox.Location = new Point(604, 119);
+            departmentCheckBox.Location = new Point(10, 28);
             departmentCheckBox.Name = "departmentCheckBox";
             departmentCheckBox.Size = new Size(114, 24);
             departmentCheckBox.TabIndex = 23;
@@ -202,7 +210,7 @@
             // facultyCheckBox
             // 
             facultyCheckBox.AutoSize = true;
-            facultyCheckBox.Location = new Point(604, 166);
+            facultyCheckBox.Location = new Point(10, 75);
             facultyCheckBox.Name = "facultyCheckBox";
             facultyCheckBox.Size = new Size(79, 24);
             facultyCheckBox.TabIndex = 24;
@@ -212,7 +220,7 @@
             // universityCheckBox
             // 
             universityCheckBox.AutoSize = true;
-            universityCheckBox.Location = new Point(903, 117);
+            universityCheckBox.Location = new Point(9, 35);
             universityCheckBox.Name = "universityCheckBox";
             universityCheckBox.Size = new Size(98, 24);
             universityCheckBox.TabIndex = 25;
@@ -221,12 +229,62 @@
             // 
             // searchBtn
             // 
-            searchBtn.Location = new Point(33, 219);
+            searchBtn.Location = new Point(545, 238);
             searchBtn.Name = "searchBtn";
             searchBtn.Size = new Size(94, 29);
             searchBtn.TabIndex = 26;
             searchBtn.Text = "Search";
             searchBtn.UseVisualStyleBackColor = true;
+            // 
+            // instructorGroupBox
+            // 
+            instructorGroupBox.Controls.Add(departmentComboBox);
+            instructorGroupBox.Controls.Add(facultyComboBox);
+            instructorGroupBox.Controls.Add(departmentCheckBox);
+            instructorGroupBox.Controls.Add(facultyCheckBox);
+            instructorGroupBox.Location = new Point(596, 117);
+            instructorGroupBox.Name = "instructorGroupBox";
+            instructorGroupBox.Size = new Size(287, 115);
+            instructorGroupBox.TabIndex = 27;
+            instructorGroupBox.TabStop = false;
+            instructorGroupBox.Text = "Instructor";
+            // 
+            // studentGroupBox
+            // 
+            studentGroupBox.Controls.Add(majorComboBox);
+            studentGroupBox.Controls.Add(genderComboBox);
+            studentGroupBox.Controls.Add(majorCheckBox);
+            studentGroupBox.Controls.Add(genderCheckBox);
+            studentGroupBox.Location = new Point(303, 117);
+            studentGroupBox.Name = "studentGroupBox";
+            studentGroupBox.Size = new Size(287, 115);
+            studentGroupBox.TabIndex = 28;
+            studentGroupBox.TabStop = false;
+            studentGroupBox.Text = "Student";
+            // 
+            // institutionGroupBox
+            // 
+            institutionGroupBox.Controls.Add(universityComboBox);
+            institutionGroupBox.Controls.Add(universityCheckBox);
+            institutionGroupBox.Location = new Point(889, 117);
+            institutionGroupBox.Name = "institutionGroupBox";
+            institutionGroupBox.Size = new Size(287, 115);
+            institutionGroupBox.TabIndex = 29;
+            institutionGroupBox.TabStop = false;
+            institutionGroupBox.Text = "Institution";
+            // 
+            // dateGroupBox
+            // 
+            dateGroupBox.Controls.Add(yearCheckBox);
+            dateGroupBox.Controls.Add(yearComboBox);
+            dateGroupBox.Controls.Add(semesterComboBox);
+            dateGroupBox.Controls.Add(semesterCheckBox);
+            dateGroupBox.Location = new Point(10, 117);
+            dateGroupBox.Name = "dateGroupBox";
+            dateGroupBox.Size = new Size(287, 115);
+            dateGroupBox.TabIndex = 30;
+            dateGroupBox.TabStop = false;
+            dateGroupBox.Text = "Date";
             // 
             // Form1
             // 
@@ -234,28 +292,26 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1182, 853);
+            Controls.Add(dateGroupBox);
+            Controls.Add(institutionGroupBox);
+            Controls.Add(studentGroupBox);
+            Controls.Add(instructorGroupBox);
             Controls.Add(searchBtn);
-            Controls.Add(universityCheckBox);
-            Controls.Add(facultyCheckBox);
-            Controls.Add(departmentCheckBox);
-            Controls.Add(genderCheckBox);
-            Controls.Add(majorCheckBox);
-            Controls.Add(semesterCheckBox);
-            Controls.Add(yearCheckBox);
             Controls.Add(label1);
             Controls.Add(numberOfCoursesTextBox);
             Controls.Add(listOfCoursesLabel);
             Controls.Add(coursesListView);
             Controls.Add(titleLabel);
-            Controls.Add(universityComboBox);
-            Controls.Add(facultyComboBox);
-            Controls.Add(departmentComboBox);
-            Controls.Add(majorComboBox);
-            Controls.Add(genderComboBox);
-            Controls.Add(semesterComboBox);
-            Controls.Add(yearComboBox);
             Name = "Form1";
             Text = "CourseDataWarehouse";
+            instructorGroupBox.ResumeLayout(false);
+            instructorGroupBox.PerformLayout();
+            studentGroupBox.ResumeLayout(false);
+            studentGroupBox.PerformLayout();
+            institutionGroupBox.ResumeLayout(false);
+            institutionGroupBox.PerformLayout();
+            dateGroupBox.ResumeLayout(false);
+            dateGroupBox.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -281,5 +337,9 @@
         private CheckBox facultyCheckBox;
         private CheckBox universityCheckBox;
         private Button searchBtn;
+        private GroupBox instructorGroupBox;
+        private GroupBox studentGroupBox;
+        private GroupBox institutionGroupBox;
+        private GroupBox dateGroupBox;
     }
 }
