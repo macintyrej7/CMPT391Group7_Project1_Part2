@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            yearCombBox = new ComboBox();
+            yearComboBox = new ComboBox();
             semesterComboBox = new ComboBox();
-            studentGenderComboBox = new ComboBox();
-            studentMajorComboBox = new ComboBox();
-            instructorDepartmentComboBox = new ComboBox();
-            instructorFacultyComboBox = new ComboBox();
+            genderComboBox = new ComboBox();
+            majorComboBox = new ComboBox();
+            departmentComboBox = new ComboBox();
+            facultyComboBox = new ComboBox();
             universityComboBox = new ComboBox();
             titleLabel = new Label();
             coursesListView = new ListView();
@@ -49,13 +49,13 @@
             universityCheckBox = new CheckBox();
             SuspendLayout();
             // 
-            // yearCombBox
+            // yearComboBox
             // 
-            yearCombBox.FormattingEnabled = true;
-            yearCombBox.Location = new Point(133, 117);
-            yearCombBox.Name = "yearCombBox";
-            yearCombBox.Size = new Size(151, 28);
-            yearCombBox.TabIndex = 7;
+            yearComboBox.FormattingEnabled = true;
+            yearComboBox.Location = new Point(133, 117);
+            yearComboBox.Name = "yearComboBox";
+            yearComboBox.Size = new Size(151, 28);
+            yearComboBox.TabIndex = 7;
             // 
             // semesterComboBox
             // 
@@ -65,37 +65,37 @@
             semesterComboBox.Size = new Size(151, 28);
             semesterComboBox.TabIndex = 8;
             // 
-            // studentGenderComboBox
+            // genderComboBox
             // 
-            studentGenderComboBox.FormattingEnabled = true;
-            studentGenderComboBox.Location = new Point(411, 165);
-            studentGenderComboBox.Name = "studentGenderComboBox";
-            studentGenderComboBox.Size = new Size(151, 28);
-            studentGenderComboBox.TabIndex = 9;
+            genderComboBox.FormattingEnabled = true;
+            genderComboBox.Location = new Point(411, 165);
+            genderComboBox.Name = "genderComboBox";
+            genderComboBox.Size = new Size(151, 28);
+            genderComboBox.TabIndex = 9;
             // 
-            // studentMajorComboBox
+            // majorComboBox
             // 
-            studentMajorComboBox.FormattingEnabled = true;
-            studentMajorComboBox.Location = new Point(411, 117);
-            studentMajorComboBox.Name = "studentMajorComboBox";
-            studentMajorComboBox.Size = new Size(151, 28);
-            studentMajorComboBox.TabIndex = 10;
+            majorComboBox.FormattingEnabled = true;
+            majorComboBox.Location = new Point(411, 117);
+            majorComboBox.Name = "majorComboBox";
+            majorComboBox.Size = new Size(151, 28);
+            majorComboBox.TabIndex = 10;
             // 
-            // instructorDepartmentComboBox
+            // departmentComboBox
             // 
-            instructorDepartmentComboBox.FormattingEnabled = true;
-            instructorDepartmentComboBox.Location = new Point(724, 117);
-            instructorDepartmentComboBox.Name = "instructorDepartmentComboBox";
-            instructorDepartmentComboBox.Size = new Size(151, 28);
-            instructorDepartmentComboBox.TabIndex = 11;
+            departmentComboBox.FormattingEnabled = true;
+            departmentComboBox.Location = new Point(724, 117);
+            departmentComboBox.Name = "departmentComboBox";
+            departmentComboBox.Size = new Size(151, 28);
+            departmentComboBox.TabIndex = 11;
             // 
-            // instructorFacultyComboBox
+            // facultyComboBox
             // 
-            instructorFacultyComboBox.FormattingEnabled = true;
-            instructorFacultyComboBox.Location = new Point(724, 165);
-            instructorFacultyComboBox.Name = "instructorFacultyComboBox";
-            instructorFacultyComboBox.Size = new Size(151, 28);
-            instructorFacultyComboBox.TabIndex = 12;
+            facultyComboBox.FormattingEnabled = true;
+            facultyComboBox.Location = new Point(724, 165);
+            facultyComboBox.Name = "facultyComboBox";
+            facultyComboBox.Size = new Size(151, 28);
+            facultyComboBox.TabIndex = 12;
             // 
             // universityComboBox
             // 
@@ -237,12 +237,12 @@
             Controls.Add(coursesListView);
             Controls.Add(titleLabel);
             Controls.Add(universityComboBox);
-            Controls.Add(instructorFacultyComboBox);
-            Controls.Add(instructorDepartmentComboBox);
-            Controls.Add(studentMajorComboBox);
-            Controls.Add(studentGenderComboBox);
+            Controls.Add(facultyComboBox);
+            Controls.Add(departmentComboBox);
+            Controls.Add(majorComboBox);
+            Controls.Add(genderComboBox);
             Controls.Add(semesterComboBox);
-            Controls.Add(yearCombBox);
+            Controls.Add(yearComboBox);
             Name = "Form1";
             Text = "CourseDataWarehouse";
             ResumeLayout(false);
@@ -250,12 +250,12 @@
         }
 
         #endregion
-        private ComboBox yearCombBox;
+        private ComboBox yearComboBox;
         private ComboBox semesterComboBox;
-        private ComboBox studentGenderComboBox;
-        private ComboBox studentMajorComboBox;
-        private ComboBox instructorDepartmentComboBox;
-        private ComboBox instructorFacultyComboBox;
+        private ComboBox genderComboBox;
+        private ComboBox majorComboBox;
+        private ComboBox departmentComboBox;
+        private ComboBox facultyComboBox;
         private ComboBox universityComboBox;
         private Label titleLabel;
         private ListView coursesListView;
