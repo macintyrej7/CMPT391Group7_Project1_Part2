@@ -1,0 +1,11 @@
+USE [CMPT391_G7_Proj1_Part2]
+GO
+
+CREATE PROCEDURE [dbo].[sp_GetGenders]
+AS
+BEGIN
+	SELECT DISTINCT S.gender
+	FROM Student as S
+	ORDER BY S.gender
+END
+GO
