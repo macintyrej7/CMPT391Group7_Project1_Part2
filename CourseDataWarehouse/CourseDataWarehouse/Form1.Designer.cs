@@ -47,6 +47,7 @@
             departmentCheckBox = new CheckBox();
             facultyCheckBox = new CheckBox();
             universityCheckBox = new CheckBox();
+            searchBtn = new Button();
             SuspendLayout();
             // 
             // yearComboBox
@@ -117,16 +118,16 @@
             // 
             // coursesListView
             // 
-            coursesListView.Location = new Point(33, 332);
+            coursesListView.Location = new Point(33, 388);
             coursesListView.Name = "coursesListView";
-            coursesListView.Size = new Size(1125, 498);
+            coursesListView.Size = new Size(1125, 442);
             coursesListView.TabIndex = 15;
             coursesListView.UseCompatibleStateImageBehavior = false;
             // 
             // listOfCoursesLabel
             // 
             listOfCoursesLabel.AutoSize = true;
-            listOfCoursesLabel.Location = new Point(44, 309);
+            listOfCoursesLabel.Location = new Point(44, 365);
             listOfCoursesLabel.Name = "listOfCoursesLabel";
             listOfCoursesLabel.Size = new Size(107, 20);
             listOfCoursesLabel.TabIndex = 16;
@@ -134,7 +135,7 @@
             // 
             // numberOfCoursesTextBox
             // 
-            numberOfCoursesTextBox.Location = new Point(189, 270);
+            numberOfCoursesTextBox.Location = new Point(189, 320);
             numberOfCoursesTextBox.Name = "numberOfCoursesTextBox";
             numberOfCoursesTextBox.Size = new Size(125, 27);
             numberOfCoursesTextBox.TabIndex = 17;
@@ -142,7 +143,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(44, 273);
+            label1.Location = new Point(44, 323);
             label1.Name = "label1";
             label1.Size = new Size(139, 20);
             label1.TabIndex = 18;
@@ -218,12 +219,22 @@
             universityCheckBox.Text = "University:";
             universityCheckBox.UseVisualStyleBackColor = true;
             // 
+            // searchBtn
+            // 
+            searchBtn.Location = new Point(33, 219);
+            searchBtn.Name = "searchBtn";
+            searchBtn.Size = new Size(94, 29);
+            searchBtn.TabIndex = 26;
+            searchBtn.Text = "Search";
+            searchBtn.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1182, 853);
+            Controls.Add(searchBtn);
             Controls.Add(universityCheckBox);
             Controls.Add(facultyCheckBox);
             Controls.Add(departmentCheckBox);
@@ -269,5 +280,6 @@
         private CheckBox departmentCheckBox;
         private CheckBox facultyCheckBox;
         private CheckBox universityCheckBox;
+        private Button searchBtn;
     }
 }
