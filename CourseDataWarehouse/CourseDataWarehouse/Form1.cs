@@ -323,19 +323,27 @@ namespace CourseDataWarehouse
 
                         sqlConnection.Open();
                         SqlDataReader reader = command.ExecuteReader();
+                        DataTable dataTable = new DataTable();
 
-                        coursesListView.Items.Clear();
-
-                        int numberOfCourses = 0;
+                        dataTable.Columns.Add("Course Title");
+                        dataTable.Columns.Add("Year");
+                        dataTable.Columns.Add("Semester");
+                        dataTable.Columns.Add("Major");
+                        dataTable.Columns.Add("Gender");
+                        dataTable.Columns.Add("Department");
+                        dataTable.Columns.Add("Faculty");
+                        dataTable.Columns.Add("University");
 
                         while (reader.Read())
                         {
-                            string courseTitle = reader["title"].ToString();
-                            ListViewItem item = new ListViewItem(courseTitle);
-                            coursesListView.Items.Add(item);
-                            numberOfCourses++;
+                            DataRow row = dataTable.NewRow();
+                            row["Course Title"] = reader["title"];
+                            dataTable.Rows.Add(row);
                         }
-                        numberOfCoursesTextBox.Text = numberOfCourses.ToString();
+
+                        coursesDataView.DataSource = dataTable;
+                        numberOfCoursesTextBox.Text = dataTable.Rows.Count.ToString();
+
                         reader.Close();
                     }
                     catch (Exception ex)

@@ -36,7 +36,6 @@ namespace CourseDataWarehouse
             facultyComboBox = new ComboBox();
             universityComboBox = new ComboBox();
             titleLabel = new Label();
-            coursesListView = new ListView();
             listOfCoursesLabel = new Label();
             numberOfCoursesTextBox = new TextBox();
             label1 = new Label();
@@ -52,10 +51,12 @@ namespace CourseDataWarehouse
             studentGroupBox = new GroupBox();
             institutionGroupBox = new GroupBox();
             dateGroupBox = new GroupBox();
+            coursesDataView = new DataGridView();
             instructorGroupBox.SuspendLayout();
             studentGroupBox.SuspendLayout();
             institutionGroupBox.SuspendLayout();
             dateGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)coursesDataView).BeginInit();
             SuspendLayout();
             // 
             // yearComboBox
@@ -137,15 +138,6 @@ namespace CourseDataWarehouse
             titleLabel.Size = new Size(287, 32);
             titleLabel.TabIndex = 14;
             titleLabel.Text = "Course Data Warehouse";
-            // 
-            // coursesListView
-            // 
-            coursesListView.Location = new Point(29, 291);
-            coursesListView.Margin = new Padding(3, 2, 3, 2);
-            coursesListView.Name = "coursesListView";
-            coursesListView.Size = new Size(985, 332);
-            coursesListView.TabIndex = 15;
-            coursesListView.UseCompatibleStateImageBehavior = false;
             // 
             // listOfCoursesLabel
             // 
@@ -319,12 +311,22 @@ namespace CourseDataWarehouse
             dateGroupBox.TabStop = false;
             dateGroupBox.Text = "Date";
             // 
+            // coursesDataView
+            // 
+            coursesDataView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            coursesDataView.Location = new Point(17, 310);
+            coursesDataView.Name = "coursesDataView";
+            coursesDataView.RowTemplate.Height = 25;
+            coursesDataView.Size = new Size(993, 308);
+            coursesDataView.TabIndex = 31;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1034, 640);
+            Controls.Add(coursesDataView);
             Controls.Add(dateGroupBox);
             Controls.Add(institutionGroupBox);
             Controls.Add(studentGroupBox);
@@ -333,7 +335,6 @@ namespace CourseDataWarehouse
             Controls.Add(label1);
             Controls.Add(numberOfCoursesTextBox);
             Controls.Add(listOfCoursesLabel);
-            Controls.Add(coursesListView);
             Controls.Add(titleLabel);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
@@ -346,6 +347,7 @@ namespace CourseDataWarehouse
             institutionGroupBox.PerformLayout();
             dateGroupBox.ResumeLayout(false);
             dateGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)coursesDataView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -359,7 +361,6 @@ namespace CourseDataWarehouse
         private ComboBox facultyComboBox;
         private ComboBox universityComboBox;
         private Label titleLabel;
-        private ListView coursesListView;
         private Label listOfCoursesLabel;
         private TextBox numberOfCoursesTextBox;
         private Label label1;
@@ -375,5 +376,6 @@ namespace CourseDataWarehouse
         private GroupBox studentGroupBox;
         private GroupBox institutionGroupBox;
         private GroupBox dateGroupBox;
+        private DataGridView coursesDataView;
     }
 }
