@@ -1,6 +1,5 @@
 using System.Data;
 using System.Data.SqlClient;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Menu;
 
 namespace CourseDataWarehouse
 {
@@ -8,8 +7,8 @@ namespace CourseDataWarehouse
     {
 
         private SqlCommand myCommand;
-        //string connectionString = "Server=localhost;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
-        string connectionString = "Server=JASON-INTEL;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
+        string connectionString = "Server=localhost;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
+        //string connectionString = "Server=JASON-INTEL;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
 
         public Form1()
         {
@@ -288,6 +287,76 @@ namespace CourseDataWarehouse
             PopulateDepartmentComboBox();
             PopulateFacultyComboBox();
             PopulateUniversityComboBox();
+        }
+
+        private void searchBtn_Click(object sender, EventArgs e)
+        {
+            int? selectedYear = (int?)yearComboBox.SelectedItem;
+            string selectedSemester = semesterComboBox.Text;
+            string selectedMajor = majorComboBox.Text;
+            string selectedGender = genderComboBox.Text;
+            string selectedDepartment = departmentComboBox.Text;
+            string selectedFaculty = facultyComboBox.Text;
+            string selectedUniversity = universityComboBox.Text;
+
+            if (!IsFilterOptionSelected())
+            {
+                MessageBox.Show("Please select at least one filter option.", "Warning! No Filters Selected.");
+                return;
+            }
+            else
+            {
+                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                {
+                    try
+                    {
+                        SqlCommand command = new SqlCommand("sp_GetCourses", sqlConnection);
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("@Year", yearCheckBox.Checked ? selectedYear ?? (object)DBNull.Value : DBNull.Value);
+                        command.Parameters.AddWithValue("@Semester", semesterCheckBox.Checked ? selectedSemester ?? (object)DBNull.Value : DBNull.Value);
+                        command.Parameters.AddWithValue("@Major", majorCheckBox.Checked ? selectedMajor ?? (object)DBNull.Value : DBNull.Value);
+                        command.Parameters.AddWithValue("@Gender", genderCheckBox.Checked ? selectedGender ?? (object)DBNull.Value : DBNull.Value);
+                        command.Parameters.AddWithValue("@Department", departmentCheckBox.Checked ? selectedDepartment ?? (object)DBNull.Value : DBNull.Value);
+                        command.Parameters.AddWithValue("@Faculty", facultyCheckBox.Checked ? selectedFaculty ?? (object)DBNull.Value : DBNull.Value);
+                        command.Parameters.AddWithValue("@University", universityCheckBox.Checked ? selectedUniversity ?? (object)DBNull.Value : DBNull.Value);
+
+                        sqlConnection.Open();
+                        SqlDataReader reader = command.ExecuteReader();
+
+                        coursesListView.Items.Clear();
+
+                        int numberOfCourses = 0;
+
+                        while (reader.Read())
+                        {
+                            string courseTitle = reader["title"].ToString();
+                            ListViewItem item = new ListViewItem(courseTitle);
+                            coursesListView.Items.Add(item);
+                            numberOfCourses++;
+                        }
+                        numberOfCoursesTextBox.Text = numberOfCourses.ToString();
+                        reader.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error with results: " + ex.Message);
+                    }
+                }
+            }
+        }
+
+        private bool IsFilterOptionSelected()
+        {
+            bool filterByYear = yearCheckBox.Checked;
+            bool filterBySemester = semesterCheckBox.Checked;
+            bool filterByMajor = majorCheckBox.Checked;
+            bool filterByGender = genderCheckBox.Checked;
+            bool filterByDepartment = departmentCheckBox.Checked;
+            bool filterByFaculty = facultyCheckBox.Checked;
+            bool filterByUniversity = universityCheckBox.Checked;
+
+            return filterByYear || filterBySemester || filterByMajor || filterByGender || filterByDepartment || filterByFaculty || filterByUniversity;
         }
     }
 }

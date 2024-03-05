@@ -1,4 +1,4 @@
-﻿namespace CourseDataWarehouse
+namespace CourseDataWarehouse
 {
     partial class Form1
     {
