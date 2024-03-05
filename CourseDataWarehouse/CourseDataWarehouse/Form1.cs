@@ -7,8 +7,8 @@ namespace CourseDataWarehouse
     {
 
         private SqlCommand myCommand;
-        string connectionString = "Server=localhost;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
-        //string connectionString = "Server=JASON-INTEL;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
+        //string connectionString = "Server=localhost;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
+        string connectionString = "Server=JASON-INTEL;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
 
         public Form1()
         {
@@ -35,6 +35,7 @@ namespace CourseDataWarehouse
 
         private void PopulateYearComboBox()
         {
+            // helper function for populating year combo box based on data from data warehouse
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
 
@@ -70,6 +71,7 @@ namespace CourseDataWarehouse
 
         private void PopulateSemesterComboBox()
         {
+            // helper function for populating semester combo box based on data from data warehouse
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
 
@@ -105,6 +107,7 @@ namespace CourseDataWarehouse
 
         private void PopulateMajorComboBox()
         {
+            // helper function for populating major combo box based on data from data warehouse
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
 
@@ -140,6 +143,7 @@ namespace CourseDataWarehouse
 
         private void PopulateGenderComboBox()
         {
+            // helper function for populating gender combo box based on data from data warehouse
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
 
@@ -175,6 +179,7 @@ namespace CourseDataWarehouse
 
         private void PopulateDepartmentComboBox()
         {
+            // helper function for populating department combo box based on data from data warehouse
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
 
@@ -210,6 +215,7 @@ namespace CourseDataWarehouse
 
         private void PopulateFacultyComboBox()
         {
+            // helper function for populating faculty combo box based on data from data warehouse
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
 
@@ -245,6 +251,7 @@ namespace CourseDataWarehouse
 
         private void PopulateUniversityComboBox()
         {
+            // helper function for populating university combo box based on data from data warehouse
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
 
@@ -280,6 +287,7 @@ namespace CourseDataWarehouse
 
         private void PopulateComboBoxes()
         {
+            // helper function for initializing the combo boxes
             PopulateYearComboBox();
             PopulateSemesterComboBox();
             PopulateMajorComboBox();
@@ -325,19 +333,61 @@ namespace CourseDataWarehouse
                         SqlDataReader reader = command.ExecuteReader();
                         DataTable dataTable = new DataTable();
 
+                        // add columns based on checked boxes
                         dataTable.Columns.Add("Course Title");
                         dataTable.Columns.Add("Year");
                         dataTable.Columns.Add("Semester");
-                        dataTable.Columns.Add("Major");
-                        dataTable.Columns.Add("Gender");
-                        dataTable.Columns.Add("Department");
-                        dataTable.Columns.Add("Faculty");
-                        dataTable.Columns.Add("University");
+                        if (majorCheckBox.Checked == true)
+                        {
+                            dataTable.Columns.Add("Major");
+                        }
+                        if (genderCheckBox.Checked == true)
+                        {
+                            dataTable.Columns.Add("Gender");
+                        }
+                        if (departmentCheckBox.Checked == true)
+                        {
+                            dataTable.Columns.Add("Department");
+                        }
+                        if (facultyCheckBox.Checked == true)
+                        {
+                            dataTable.Columns.Add("Faculty");
+                        }
+                        if (universityCheckBox.Checked == true)
+                        {
+                            dataTable.Columns.Add("University");
+                        }
 
                         while (reader.Read())
                         {
                             DataRow row = dataTable.NewRow();
+
+                            // add data to rows based on checked boxes / dynamic columns
                             row["Course Title"] = reader["title"];
+                            row["Year"] = reader["year"];
+                            row["Semester"] = reader["semester"];
+
+                            if (majorCheckBox.Checked == true)
+                            {
+                                row["Major"] = reader["major"];
+                            }
+                            if (genderCheckBox.Checked == true)
+                            {
+                                row["Gender"] = reader["gender"];
+                            }
+                            if (departmentCheckBox.Checked == true)
+                            {
+                                row["Department"] = reader["department"];
+                            }
+                            if (facultyCheckBox.Checked == true)
+                            {
+                                row["Faculty"] = reader["faculty"];
+                            }
+                            if (universityCheckBox.Checked == true)
+                            {
+                                row["University"] = reader["university_name"];
+                            }
+
                             dataTable.Rows.Add(row);
                         }
 
