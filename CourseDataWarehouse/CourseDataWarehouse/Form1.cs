@@ -7,8 +7,8 @@ namespace CourseDataWarehouse
     {
 
         private SqlCommand myCommand;
-        //string connectionString = "Server=localhost;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
-        string connectionString = "Server=JASON-INTEL;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
+        string connectionString = "Server=localhost;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
+        //string connectionString = "Server=JASON-INTEL;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
 
         public Form1()
         {
@@ -337,6 +337,7 @@ namespace CourseDataWarehouse
                         dataTable.Columns.Add("Course Title");
                         dataTable.Columns.Add("Year");
                         dataTable.Columns.Add("Semester");
+                        //dataTable.Columns.Add("University_ID");
                         if (majorCheckBox.Checked == true)
                         {
                             dataTable.Columns.Add("Major");
@@ -347,11 +348,11 @@ namespace CourseDataWarehouse
                         }
                         if (departmentCheckBox.Checked == true)
                         {
-                            dataTable.Columns.Add("Department");
+                            dataTable.Columns.Add("Instructor Dept.");
                         }
                         if (facultyCheckBox.Checked == true)
                         {
-                            dataTable.Columns.Add("Faculty");
+                            dataTable.Columns.Add("Instructor Faculty");
                         }
                         if (universityCheckBox.Checked == true)
                         {
@@ -366,6 +367,7 @@ namespace CourseDataWarehouse
                             row["Course Title"] = reader["title"];
                             row["Year"] = reader["year"];
                             row["Semester"] = reader["semester"];
+                            //row["University_ID"] = reader["university_id"];
 
                             if (majorCheckBox.Checked == true)
                             {
@@ -377,11 +379,11 @@ namespace CourseDataWarehouse
                             }
                             if (departmentCheckBox.Checked == true)
                             {
-                                row["Department"] = reader["department"];
+                                row["Instructor Dept."] = reader["department"];
                             }
                             if (facultyCheckBox.Checked == true)
                             {
-                                row["Faculty"] = reader["faculty"];
+                                row["Instructor Faculty"] = reader["faculty"];
                             }
                             if (universityCheckBox.Checked == true)
                             {
