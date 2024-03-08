@@ -52,6 +52,7 @@ namespace CourseDataWarehouse
             institutionGroupBox = new GroupBox();
             dateGroupBox = new GroupBox();
             coursesDataView = new DataGridView();
+            uploadButton = new Button();
             instructorGroupBox.SuspendLayout();
             studentGroupBox.SuspendLayout();
             institutionGroupBox.SuspendLayout();
@@ -320,12 +321,24 @@ namespace CourseDataWarehouse
             coursesDataView.Size = new Size(993, 308);
             coursesDataView.TabIndex = 31;
             // 
+            // uploadButton
+            // 
+            uploadButton.Location = new Point(877, 28);
+            uploadButton.Margin = new Padding(3, 2, 3, 2);
+            uploadButton.Name = "uploadButton";
+            uploadButton.Size = new Size(133, 45);
+            uploadButton.TabIndex = 32;
+            uploadButton.Text = "Upload File";
+            uploadButton.UseVisualStyleBackColor = true;
+            uploadButton.Click += uploadButton_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1034, 640);
+            Controls.Add(uploadButton);
             Controls.Add(coursesDataView);
             Controls.Add(dateGroupBox);
             Controls.Add(institutionGroupBox);
@@ -377,5 +390,6 @@ namespace CourseDataWarehouse
         private GroupBox institutionGroupBox;
         private GroupBox dateGroupBox;
         private DataGridView coursesDataView;
+        private Button uploadButton;
     }
 }
