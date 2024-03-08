@@ -64,115 +64,107 @@ namespace CourseDataWarehouse
             // 
             yearComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             yearComboBox.FormattingEnabled = true;
-            yearComboBox.Location = new Point(95, 20);
-            yearComboBox.Margin = new Padding(3, 2, 3, 2);
+            yearComboBox.Location = new Point(109, 27);
             yearComboBox.Name = "yearComboBox";
-            yearComboBox.Size = new Size(133, 23);
+            yearComboBox.Size = new Size(151, 28);
             yearComboBox.TabIndex = 7;
             // 
             // semesterComboBox
             // 
             semesterComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             semesterComboBox.FormattingEnabled = true;
-            semesterComboBox.Location = new Point(95, 55);
-            semesterComboBox.Margin = new Padding(3, 2, 3, 2);
+            semesterComboBox.Location = new Point(109, 73);
             semesterComboBox.Name = "semesterComboBox";
-            semesterComboBox.Size = new Size(133, 23);
+            semesterComboBox.Size = new Size(151, 28);
             semesterComboBox.TabIndex = 8;
             // 
             // genderComboBox
             // 
             genderComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             genderComboBox.FormattingEnabled = true;
-            genderComboBox.Location = new Point(85, 56);
-            genderComboBox.Margin = new Padding(3, 2, 3, 2);
+            genderComboBox.Location = new Point(97, 75);
             genderComboBox.Name = "genderComboBox";
-            genderComboBox.Size = new Size(133, 23);
+            genderComboBox.Size = new Size(151, 28);
             genderComboBox.TabIndex = 9;
             // 
             // majorComboBox
             // 
             majorComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             majorComboBox.FormattingEnabled = true;
-            majorComboBox.Location = new Point(85, 20);
-            majorComboBox.Margin = new Padding(3, 2, 3, 2);
+            majorComboBox.Location = new Point(97, 27);
             majorComboBox.Name = "majorComboBox";
-            majorComboBox.Size = new Size(133, 23);
+            majorComboBox.Size = new Size(151, 28);
             majorComboBox.TabIndex = 10;
             // 
             // departmentComboBox
             // 
             departmentComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             departmentComboBox.FormattingEnabled = true;
-            departmentComboBox.Location = new Point(114, 20);
-            departmentComboBox.Margin = new Padding(3, 2, 3, 2);
+            departmentComboBox.Location = new Point(130, 27);
             departmentComboBox.Name = "departmentComboBox";
-            departmentComboBox.Size = new Size(133, 23);
+            departmentComboBox.Size = new Size(151, 28);
             departmentComboBox.TabIndex = 11;
             // 
             // facultyComboBox
             // 
             facultyComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             facultyComboBox.FormattingEnabled = true;
-            facultyComboBox.Location = new Point(114, 56);
-            facultyComboBox.Margin = new Padding(3, 2, 3, 2);
+            facultyComboBox.Location = new Point(130, 75);
             facultyComboBox.Name = "facultyComboBox";
-            facultyComboBox.Size = new Size(133, 23);
+            facultyComboBox.Size = new Size(151, 28);
             facultyComboBox.TabIndex = 12;
             // 
             // universityComboBox
             // 
             universityComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             universityComboBox.FormattingEnabled = true;
-            universityComboBox.Location = new Point(99, 26);
-            universityComboBox.Margin = new Padding(3, 2, 3, 2);
+            universityComboBox.Location = new Point(113, 35);
             universityComboBox.Name = "universityComboBox";
-            universityComboBox.Size = new Size(133, 23);
+            universityComboBox.Size = new Size(151, 28);
             universityComboBox.TabIndex = 13;
             // 
             // titleLabel
             // 
             titleLabel.AutoSize = true;
             titleLabel.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            titleLabel.Location = new Point(360, 17);
+            titleLabel.Location = new Point(411, 23);
             titleLabel.Name = "titleLabel";
-            titleLabel.Size = new Size(287, 32);
+            titleLabel.Size = new Size(352, 41);
             titleLabel.TabIndex = 14;
             titleLabel.Text = "Course Data Warehouse";
             // 
             // listOfCoursesLabel
             // 
             listOfCoursesLabel.AutoSize = true;
-            listOfCoursesLabel.Location = new Point(38, 274);
+            listOfCoursesLabel.Location = new Point(43, 365);
             listOfCoursesLabel.Name = "listOfCoursesLabel";
-            listOfCoursesLabel.Size = new Size(87, 15);
+            listOfCoursesLabel.Size = new Size(107, 20);
             listOfCoursesLabel.TabIndex = 16;
             listOfCoursesLabel.Text = "List of Courses:";
             // 
             // numberOfCoursesTextBox
             // 
-            numberOfCoursesTextBox.Location = new Point(165, 240);
-            numberOfCoursesTextBox.Margin = new Padding(3, 2, 3, 2);
+            numberOfCoursesTextBox.Location = new Point(189, 320);
             numberOfCoursesTextBox.Name = "numberOfCoursesTextBox";
-            numberOfCoursesTextBox.Size = new Size(110, 23);
+            numberOfCoursesTextBox.ReadOnly = true;
+            numberOfCoursesTextBox.Size = new Size(125, 27);
             numberOfCoursesTextBox.TabIndex = 17;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(38, 242);
+            label1.Location = new Point(43, 323);
             label1.Name = "label1";
-            label1.Size = new Size(113, 15);
+            label1.Size = new Size(139, 20);
             label1.TabIndex = 18;
             label1.Text = "Number of Courses:";
             // 
             // yearCheckBox
             // 
             yearCheckBox.AutoSize = true;
-            yearCheckBox.Location = new Point(8, 20);
-            yearCheckBox.Margin = new Padding(3, 2, 3, 2);
+            yearCheckBox.Location = new Point(9, 27);
             yearCheckBox.Name = "yearCheckBox";
-            yearCheckBox.Size = new Size(51, 19);
+            yearCheckBox.Size = new Size(62, 24);
             yearCheckBox.TabIndex = 19;
             yearCheckBox.Text = "Year:";
             yearCheckBox.UseVisualStyleBackColor = true;
@@ -180,10 +172,9 @@ namespace CourseDataWarehouse
             // semesterCheckBox
             // 
             semesterCheckBox.AutoSize = true;
-            semesterCheckBox.Location = new Point(8, 55);
-            semesterCheckBox.Margin = new Padding(3, 2, 3, 2);
+            semesterCheckBox.Location = new Point(9, 73);
             semesterCheckBox.Name = "semesterCheckBox";
-            semesterCheckBox.Size = new Size(77, 19);
+            semesterCheckBox.Size = new Size(95, 24);
             semesterCheckBox.TabIndex = 20;
             semesterCheckBox.Text = "Semester:";
             semesterCheckBox.UseVisualStyleBackColor = true;
@@ -191,10 +182,9 @@ namespace CourseDataWarehouse
             // majorCheckBox
             // 
             majorCheckBox.AutoSize = true;
-            majorCheckBox.Location = new Point(9, 21);
-            majorCheckBox.Margin = new Padding(3, 2, 3, 2);
+            majorCheckBox.Location = new Point(10, 28);
             majorCheckBox.Name = "majorCheckBox";
-            majorCheckBox.Size = new Size(60, 19);
+            majorCheckBox.Size = new Size(73, 24);
             majorCheckBox.TabIndex = 21;
             majorCheckBox.Text = "Major:";
             majorCheckBox.UseVisualStyleBackColor = true;
@@ -202,10 +192,9 @@ namespace CourseDataWarehouse
             // genderCheckBox
             // 
             genderCheckBox.AutoSize = true;
-            genderCheckBox.Location = new Point(9, 56);
-            genderCheckBox.Margin = new Padding(3, 2, 3, 2);
+            genderCheckBox.Location = new Point(10, 75);
             genderCheckBox.Name = "genderCheckBox";
-            genderCheckBox.Size = new Size(67, 19);
+            genderCheckBox.Size = new Size(82, 24);
             genderCheckBox.TabIndex = 22;
             genderCheckBox.Text = "Gender:";
             genderCheckBox.UseVisualStyleBackColor = true;
@@ -213,10 +202,9 @@ namespace CourseDataWarehouse
             // departmentCheckBox
             // 
             departmentCheckBox.AutoSize = true;
-            departmentCheckBox.Location = new Point(9, 21);
-            departmentCheckBox.Margin = new Padding(3, 2, 3, 2);
+            departmentCheckBox.Location = new Point(10, 28);
             departmentCheckBox.Name = "departmentCheckBox";
-            departmentCheckBox.Size = new Size(92, 19);
+            departmentCheckBox.Size = new Size(114, 24);
             departmentCheckBox.TabIndex = 23;
             departmentCheckBox.Text = "Department:";
             departmentCheckBox.UseVisualStyleBackColor = true;
@@ -224,10 +212,9 @@ namespace CourseDataWarehouse
             // facultyCheckBox
             // 
             facultyCheckBox.AutoSize = true;
-            facultyCheckBox.Location = new Point(9, 56);
-            facultyCheckBox.Margin = new Padding(3, 2, 3, 2);
+            facultyCheckBox.Location = new Point(10, 75);
             facultyCheckBox.Name = "facultyCheckBox";
-            facultyCheckBox.Size = new Size(67, 19);
+            facultyCheckBox.Size = new Size(79, 24);
             facultyCheckBox.TabIndex = 24;
             facultyCheckBox.Text = "Faculty:";
             facultyCheckBox.UseVisualStyleBackColor = true;
@@ -235,20 +222,18 @@ namespace CourseDataWarehouse
             // universityCheckBox
             // 
             universityCheckBox.AutoSize = true;
-            universityCheckBox.Location = new Point(8, 26);
-            universityCheckBox.Margin = new Padding(3, 2, 3, 2);
+            universityCheckBox.Location = new Point(9, 35);
             universityCheckBox.Name = "universityCheckBox";
-            universityCheckBox.Size = new Size(81, 19);
+            universityCheckBox.Size = new Size(98, 24);
             universityCheckBox.TabIndex = 25;
             universityCheckBox.Text = "University:";
             universityCheckBox.UseVisualStyleBackColor = true;
             // 
             // searchBtn
             // 
-            searchBtn.Location = new Point(877, 242);
-            searchBtn.Margin = new Padding(3, 2, 3, 2);
+            searchBtn.Location = new Point(1002, 323);
             searchBtn.Name = "searchBtn";
-            searchBtn.Size = new Size(133, 45);
+            searchBtn.Size = new Size(152, 60);
             searchBtn.TabIndex = 26;
             searchBtn.Text = "Search";
             searchBtn.UseVisualStyleBackColor = true;
@@ -260,11 +245,9 @@ namespace CourseDataWarehouse
             instructorGroupBox.Controls.Add(facultyComboBox);
             instructorGroupBox.Controls.Add(departmentCheckBox);
             instructorGroupBox.Controls.Add(facultyCheckBox);
-            instructorGroupBox.Location = new Point(522, 88);
-            instructorGroupBox.Margin = new Padding(3, 2, 3, 2);
+            instructorGroupBox.Location = new Point(597, 117);
             instructorGroupBox.Name = "instructorGroupBox";
-            instructorGroupBox.Padding = new Padding(3, 2, 3, 2);
-            instructorGroupBox.Size = new Size(251, 86);
+            instructorGroupBox.Size = new Size(287, 115);
             instructorGroupBox.TabIndex = 27;
             instructorGroupBox.TabStop = false;
             instructorGroupBox.Text = "Instructor";
@@ -275,11 +258,9 @@ namespace CourseDataWarehouse
             studentGroupBox.Controls.Add(genderComboBox);
             studentGroupBox.Controls.Add(majorCheckBox);
             studentGroupBox.Controls.Add(genderCheckBox);
-            studentGroupBox.Location = new Point(265, 88);
-            studentGroupBox.Margin = new Padding(3, 2, 3, 2);
+            studentGroupBox.Location = new Point(303, 117);
             studentGroupBox.Name = "studentGroupBox";
-            studentGroupBox.Padding = new Padding(3, 2, 3, 2);
-            studentGroupBox.Size = new Size(251, 86);
+            studentGroupBox.Size = new Size(287, 115);
             studentGroupBox.TabIndex = 28;
             studentGroupBox.TabStop = false;
             studentGroupBox.Text = "Student";
@@ -288,11 +269,9 @@ namespace CourseDataWarehouse
             // 
             institutionGroupBox.Controls.Add(universityComboBox);
             institutionGroupBox.Controls.Add(universityCheckBox);
-            institutionGroupBox.Location = new Point(778, 88);
-            institutionGroupBox.Margin = new Padding(3, 2, 3, 2);
+            institutionGroupBox.Location = new Point(889, 117);
             institutionGroupBox.Name = "institutionGroupBox";
-            institutionGroupBox.Padding = new Padding(3, 2, 3, 2);
-            institutionGroupBox.Size = new Size(251, 86);
+            institutionGroupBox.Size = new Size(287, 115);
             institutionGroupBox.TabIndex = 29;
             institutionGroupBox.TabStop = false;
             institutionGroupBox.Text = "Institution";
@@ -303,11 +282,9 @@ namespace CourseDataWarehouse
             dateGroupBox.Controls.Add(yearComboBox);
             dateGroupBox.Controls.Add(semesterComboBox);
             dateGroupBox.Controls.Add(semesterCheckBox);
-            dateGroupBox.Location = new Point(9, 88);
-            dateGroupBox.Margin = new Padding(3, 2, 3, 2);
+            dateGroupBox.Location = new Point(10, 117);
             dateGroupBox.Name = "dateGroupBox";
-            dateGroupBox.Padding = new Padding(3, 2, 3, 2);
-            dateGroupBox.Size = new Size(251, 86);
+            dateGroupBox.Size = new Size(287, 115);
             dateGroupBox.TabIndex = 30;
             dateGroupBox.TabStop = false;
             dateGroupBox.Text = "Date";
@@ -315,10 +292,12 @@ namespace CourseDataWarehouse
             // coursesDataView
             // 
             coursesDataView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            coursesDataView.Location = new Point(17, 310);
+            coursesDataView.Location = new Point(19, 413);
+            coursesDataView.Margin = new Padding(3, 4, 3, 4);
             coursesDataView.Name = "coursesDataView";
+            coursesDataView.RowHeadersWidth = 51;
             coursesDataView.RowTemplate.Height = 25;
-            coursesDataView.Size = new Size(993, 308);
+            coursesDataView.Size = new Size(1135, 411);
             coursesDataView.TabIndex = 31;
             // 
             // uploadButton
@@ -334,7 +313,7 @@ namespace CourseDataWarehouse
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1034, 640);
@@ -349,7 +328,6 @@ namespace CourseDataWarehouse
             Controls.Add(numberOfCoursesTextBox);
             Controls.Add(listOfCoursesLabel);
             Controls.Add(titleLabel);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "CourseDataWarehouse";
             instructorGroupBox.ResumeLayout(false);
