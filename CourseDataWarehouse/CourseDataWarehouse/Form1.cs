@@ -1,5 +1,6 @@
 using System.Data;
 using System.Data.SqlClient;
+using System.Xml;
 
 namespace CourseDataWarehouse
 {
@@ -417,6 +418,41 @@ namespace CourseDataWarehouse
             bool filterByUniversity = universityCheckBox.Checked;
 
             return filterByYear || filterBySemester || filterByMajor || filterByGender || filterByDepartment || filterByFaculty || filterByUniversity;
+        }
+
+        private void uploadButton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = "C://Desktop";
+            openFileDialog.Title = "Select file to be upload.";
+            openFileDialog.Filter = "Select Valid Document (*.xml)|*.xml|All files (*.*)|*.*";
+            openFileDialog.FilterIndex = 1;
+            try
+            {
+                if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    if (openFileDialog.CheckFileExists)
+                    {
+                        string path = System.IO.Path.GetFullPath(openFileDialog.FileName);
+
+                        XmlDocument xmlDoc = new XmlDocument();
+                        xmlDoc.Load(path);
+                        ProccessFile(xmlDoc);
+
+                        MessageBox.Show("Upload completed successfully!");
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Upload Failed! Error: " + ex.Message);
+            }
+        }
+
+        private void ProccessFile (XmlDocument xmlDoc)
+        {
+
         }
     }
 }
