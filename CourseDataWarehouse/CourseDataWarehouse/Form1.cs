@@ -7,8 +7,8 @@ namespace CourseDataWarehouse
     {
 
         private SqlCommand myCommand;
-        string connectionString = "Server=localhost;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
-        //string connectionString = "Server=JASON-INTEL;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
+        //string connectionString = "Server=localhost;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
+        string connectionString = "Server=JASON-INTEL;Database=CMPT391_G7_Proj1_Part2;Trusted_Connection=True;";
 
         public Form1()
         {
@@ -337,14 +337,14 @@ namespace CourseDataWarehouse
                         dataTable.Columns.Add("Course Title");
                         dataTable.Columns.Add("Year");
                         dataTable.Columns.Add("Semester");
-                        //dataTable.Columns.Add("University_ID");
+                        dataTable.Columns.Add("University_ID");
                         if (majorCheckBox.Checked == true)
                         {
-                            dataTable.Columns.Add("Major");
+                            dataTable.Columns.Add("Student Major");
                         }
                         if (genderCheckBox.Checked == true)
                         {
-                            dataTable.Columns.Add("Gender");
+                            dataTable.Columns.Add("Student Gender");
                         }
                         if (departmentCheckBox.Checked == true)
                         {
@@ -367,15 +367,15 @@ namespace CourseDataWarehouse
                             row["Course Title"] = reader["title"];
                             row["Year"] = reader["year"];
                             row["Semester"] = reader["semester"];
-                            //row["University_ID"] = reader["university_id"];
+                            row["University_ID"] = reader["university_id"];
 
                             if (majorCheckBox.Checked == true)
                             {
-                                row["Major"] = reader["major"];
+                                row["student Major"] = reader["major"];
                             }
                             if (genderCheckBox.Checked == true)
                             {
-                                row["Gender"] = reader["gender"];
+                                row["Student Gender"] = reader["gender"];
                             }
                             if (departmentCheckBox.Checked == true)
                             {
