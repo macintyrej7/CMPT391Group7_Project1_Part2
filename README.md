@@ -1,4 +1,4 @@
-# CMPT 391 - Gorup 7 - Project 1 Part 2
+# CMPT 391 - Gorup 7 - Project 1 Parts 2 & 3
 ---
 
 ## Group Members: Carson, Fahad, Jason, Matt, Steve
