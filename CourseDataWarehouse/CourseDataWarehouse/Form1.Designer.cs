@@ -316,7 +316,7 @@ namespace CourseDataWarehouse
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1034, 640);
+            ClientSize = new Size(1182, 853);
             Controls.Add(uploadButton);
             Controls.Add(coursesDataView);
             Controls.Add(dateGroupBox);
