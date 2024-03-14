@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table date = "20240311" >
+    <Enrollment>
+
+        <Course>
+            <title>CMPT 319</title>
+            <department>Computer Science</department>
+            <faculty>Arts and Science</faculty>
+            <university_id>1</university_id>
+        </Course>
+
+        <Student>
+            <major>Computer Science</major>
+            <gender>Male</gender>
+        </Student>
+
+        <Date>
+            <semester>Fall</semester>
+            <year>2025</year>
+        </Date>
+
+        <Instructor>
+            <rank>Associate Professor</rank>
+            <department>Computer Science</department>
+            <faculty>Arts and Science</faculty>
+            <university_id>1</university_id>
+        </Instructor>
+
+        <University>
+            <university_name>MacEwan University</university_name>
+            <university_address>RANDOM ADDRESS</university_address>
+        </University>
+
+    </Enrollment>
+
+    <Enrollment>
+
+        <Course>
+            <title>MATH 217</title>
+            <department>Mathematics</department>
+            <faculty>Arts and Science</faculty>
+            <university_id>4</university_id>
+        </Course>
+
+        <Student>
+            <major>Statistics</major>
+            <gender>Female</gender>
+        </Student>
+
+        <Date>
+            <semester>Winter</semester>
+            <year>2023</year>
+        </Date>
+
+        <Instructor>
+            <rank>Distinguished Professor</rank>
+            <department>Biology</department>
+            <faculty>Arts and Science</faculty>
+            <university_id>4</university_id>
+        </Instructor>
+
+        <University>
+            <university_name>University of Lethrbidge</university_name>
+            <university_address>RANDOM ADDRESS</university_address>
+        </University>
+
+    </Enrollment>
+
+    <Enrollment>
+
+        <Course>
+            <title>BIOL 140</title>
+            <department>Biology</department>
+            <faculty>Arts and Science</faculty>
+            <university_id>1</university_id>
+        </Course>
+
+        <Student>
+            <major>Marketing</major>
+            <gender>Male</gender>
+        </Student>
+
+        <Date>
+            <semester>Winter</semester>
+            <year>2012</year>
+        </Date>
+
+        <Instructor>
+            <rank>Full Professor</rank>
+            <department>Design</department>
+            <faculty>Arts and Science</faculty>
+            <university_id>1</university_id>
+        </Instructor>
+
+        <University>
+            <university_name>MacEwan University</university_name>
+            <university_address>RANDOM ADDRESS</university_address>
+        </University>
+
+    </Enrollment>
+
+    <Enrollment>
+
+        <Course>
+            <title></title>
+            <department></department>
+            <faculty></faculty>
+            <university_id></university_id>
+        </Course>
+
+        <Student>
+            <major></major>
+            <gender></gender>
+        </Student>
+
+        <Date>
+            <semester></semester>
+            <year></year>
+        </Date>
+
+        <Instructor>
+            <rank></rank>
+            <department></department>
+            <faculty></faculty>
+            <university_id></university_id>
+        </Instructor>
+
+        <University>
+            <university_name></university_name>
+            <university_address></university_address>
+        </University>
+        
+    </Enrollment>
+
+    <Enrollment>
+
+        <Course>
+            <title></title>
+            <department></department>
+            <faculty></faculty>
+            <university_id></university_id>
+        </Course>
+
+        <Student>
+            <major></major>
+            <gender></gender>
+        </Student>
+
+        <Date>
+            <semester></semester>
+            <year></year>
+        </Date>
+
+        <Instructor>
+            <rank></rank>
+            <department></department>
+            <faculty></faculty>
+            <university_id></university_id>
+        </Instructor>
+
+        <University>
+            <university_name></university_name>
+            <university_address></university_address>
+        </University>
+        
+    </Enrollment>
+    
+</table>

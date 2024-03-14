@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table date = "20240311" >
+    <Enrollment>
+
+        <Course>
+            <title>CMPT 500</title>
+            <department>Computer Science</department>
+            <faculty>Arts and Science</faculty>
+            <university_id>5</university_id>
+        </Course>
+
+        <Student>
+            <major>Computer Science</major>
+            <gender>Female</gender>
+        </Student>
+
+        <Date>
+            <semester>Winter</semester>
+            <year>2024</year>
+        </Date>
+
+        <Instructor>
+            <rank>Professor</rank>
+            <department>Computer Science</department>
+            <faculty>Arts and Science</faculty>
+            <university_id>5</university_id>
+        </Instructor>
+
+        <University>
+            <university_name>University of British Columbia</university_name>
+            <university_address>RANDOM ADDRESS</university_address>
+        </University>
+
+    </Enrollment>
+
+    <Enrollment>
+
+        <Course>
+            <title>ENGL 388</title>
+            <department>English</department>
+            <faculty>Arts and Science</faculty>
+            <university_id>2</university_id>
+        </Course>
+
+        <Student>
+            <major>Biology</major>
+            <gender>Female</gender>
+        </Student>
+
+        <Date>
+            <semester>Fall</semester>
+            <year>2023</year>
+        </Date>
+
+        <Instructor>
+            <rank>Assistant Professor</rank>
+            <department>English</department>
+            <faculty>Arts and Science</faculty>
+            <university_id>5</university_id>
+        </Instructor>
+
+        <University>
+            <university_name>University of Alberta</university_name>
+            <university_address>RANDOM ADDRESS</university_address>
+        </University>
+
+    </Enrollment>
+
+    <Enrollment>
+
+        <Course>
+            <title>ACCT 388</title>
+            <department>Accounting</department>
+            <faculty>Business</faculty>
+            <university_id>3</university_id>
+        </Course>
+
+        <Student>
+            <major>Marketing</major>
+            <gender>Male</gender>
+        </Student>
+
+        <Date>
+            <semester>Winter</semester>
+            <year>2012</year>
+        </Date>
+
+        <Instructor>
+            <rank>Full Professor</rank>
+            <department>Anthropology</department>
+            <faculty>Arts and Science</faculty>
+            <university_id>3</university_id>
+        </Instructor>
+
+        <University>
+            <university_name>University of Calgary</university_name>
+            <university_address>RANDOM ADDRESS</university_address>
+        </University>
+
+    </Enrollment>
+
+    <Enrollment>
+
+        <Course>
+            <title></title>
+            <department></department>
+            <faculty></faculty>
+            <university_id></university_id>
+        </Course>
+
+        <Student>
+            <major></major>
+            <gender></gender>
+        </Student>
+
+        <Date>
+            <semester></semester>
+            <year></year>
+        </Date>
+
+        <Instructor>
+            <rank></rank>
+            <department></department>
+            <faculty></faculty>
+            <university_id></university_id>
+        </Instructor>
+
+        <University>
+            <university_name></university_name>
+            <university_address></university_address>
+        </University>
+        
+    </Enrollment>
+
+    <Enrollment>
+
+        <Course>
+            <title>THTR 105</title>
+            <department>Theatre</department>
+            <faculty>Fines Arts and Communication</faculty>
+            <online>False</online>
+            <university_id>3</university_id>
+        </Course>
+
+        <Student>
+            <major>Nursing</major>
+            <gender>Male</gender>
+        </Student>
+
+        <Date>
+            <semester>Winter</semester>
+            <year>2016</year>
+        </Date>
+
+        <Instructor>
+            <rank>Full Professor</rank>
+            <department>Anthropology</department>
+            <faculty>Arts and Science</faculty>
+            <university_id>3</university_id>
+        </Instructor>
+
+        <University>
+            <university_name>University of Calgary</university_name>
+            <university_address>RANDOM ADDRESS</university_address>
+        </University>
+
+    </Enrollment>
+
+    <Enrollment>
+
+        <Course>
+            <title>ANTH 234</title>
+            <department>Anthropology</department>
+            <faculty>Fines Arts and Communication</faculty>
+            <online>False</online>
+            <university_id>3</university_id>
+        </Course>
+
+        <Student>
+            <major>Social Work</major>
+            <gender>Male</gender>
+        </Student>
+
+        <Date>
+            <semester>Fall</semester>
+            <year>2019</year>
+        </Date>
+
+        <Instructor>
+            <rank>Associate Professor</rank>
+            <department>Anthropology</department>
+            <faculty>Continuing Education</faculty>
+            <university_id>3</university_id>
+        </Instructor>
+
+        <University>
+            <university_name>University of Calgary</university_name>
+            <university_address>RANDOM ADDRESS</university_address>
+        </University>
+
+    </Enrollment>
+
+    <Enrollment>
+
+        <Course>
+            <title>HPRF 322</title>
+            <department>Human Performace</department>
+            <faculty>Health and Community Studies</faculty>
+            <online>False</online>
+            <university_id>5</university_id>
+        </Course>
+
+        <Student>
+            <major>Communication</major>
+            <gender>Male</gender>
+        </Student>
+
+        <Date>
+            <semester>Fall</semester>
+            <year>2008</year>
+        </Date>
+
+        <Instructor>
+            <rank>Distinguished Professor</rank>
+            <department>Anthropology</department>
+            <faculty>Arts and Science</faculty>
+            <university_id>5</university_id>
+        </Instructor>
+
+        <University>
+            <university_name>University of British Columbia</university_name>
+            <university_address>RANDOM ADDRESS</university_address>
+        </University>
+
+    </Enrollment>
+
+    <Enrollment>
+
+        <Course>
+            <title></title>
+            <department></department>
+            <faculty></faculty>
+            <university_id></university_id>
+        </Course>
+
+        <Student>
+            <major></major>
+            <gender></gender>
+        </Student>
+
+        <Date>
+            <semester></semester>
+            <year></year>
+        </Date>
+
+        <Instructor>
+            <rank></rank>
+            <department></department>
+            <faculty></faculty>
+            <university_id></university_id>
+        </Instructor>
+
+        <University>
+            <university_name></university_name>
+            <university_address></university_address>
+        </University>
+        
+    </Enrollment>
+    
+</table>
