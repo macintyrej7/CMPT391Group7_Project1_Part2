@@ -35,3 +35,6 @@ Student(student_id (PK), major, gender)
 University(university_id (PK), university_name)
 ```
 
+---
+### Extract, Transfer, Load (ETL) Functionality
+Our client also supports ETL functionality using .xml files. Example XML files can be found in the 'XML Test Files' directory. Any XML files that follows a similar structure should be supported by our client. The 'Upload' function first parses the chosen XML file and extracts the relevant information, and then stages the data and checks for duplicate entries before loading the data into teh data warehouse. Additional helper classes have been created to support staging the data, including Course, Student, Date, Instructor, University, and Enrollment classes.
